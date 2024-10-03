@@ -17,3 +17,7 @@ while True:
 
         message = clients.recv(1024).decode('utf-8')
         print(message)
+        if message == 'exit' or message == 'quit':
+            break
+
+    break

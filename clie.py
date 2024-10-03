@@ -12,3 +12,5 @@ while True:
 
     message = conn_2_server.recv(1024).decode('utf-8')
     print(message)
+    if message == 'exit' or message == 'quit':
+        break
